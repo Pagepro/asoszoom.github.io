@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>AsosZoom Demo</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="static/css/main.css">
+        <link rel="stylesheet" href="dist/asos.zoom.css">
+    </head>
+    <body>
+        <main class="sec--content">
+            <div class="inner">
+                <h1>AsosZoom Demo</h1>
+                <h2>Single Image Vertical Mode</h2>
+                <p>
+                    <a href="demo/pic-04.jpg" class="asos-zoom">
+                        <img src="demo/thumb-04.jpg" alt="Asos Zoom Vertical Image Demo" />
+                    </a>
+                </p>
+
+                <h2>Single Image Horizontal Mode</h2>
+                <p>
+                    <a href="demo/pic-05.jpg" class="asos-zoom-horizontal">
+                        <img src="demo/thumb-05.jpg" alt="Asos Zoom Horizontal Image Demo" />
+                    </a>
+                </p>
+                <h2>Gallery demo</h2>
+                <ul class="list--gallery">
+                    <li>
+                        <a href="demo/pic-01.jpg" rel="gallery-1">
+                            <img src="demo/thumb-01.jpg" alt="Asos Zoom Demo Image 01" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="demo/pic-02.jpg" rel="gallery-1">
+                            <img src="demo/thumb-02.jpg" alt="Asos Zoom Demo Image 02" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="demo/pic-03.jpg" rel="gallery-1">
+                            <img src="demo/thumb-03.jpg" alt="Asos Zoom Demo Image 03" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p>Images: http://pixabay.com/</p>
+        </main>
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="dist/asos.zoom.js"></script>
+        <script>
+            $('.asos-zoom').asosZoom();
+            $('.asos-zoom-horizontal').asosZoom({
+                zoom: 'horizontal'
+            });
+            $('.list--gallery a').asosZoom();
+        </script>
+    </body>
+</html>

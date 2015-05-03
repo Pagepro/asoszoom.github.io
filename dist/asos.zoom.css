@@ -1,0 +1,89 @@
+#asosZoom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+  text-align: center;
+  display: none; }
+  #asosZoom__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000; }
+  #asosZoom__content {
+    position: relative;
+    margin: 3% auto 0;
+    overflow: hidden;
+    width: auto;
+    display: inline-block;
+    background: #FFF;
+    box-shadow: 0 0 1em #111; }
+    #asosZoom__content__img {
+      width: 100%;
+      display: inline-block; }
+      #asosZoom__content__img__xl {
+        position: relative;
+        cursor: crosshair; }
+    #asosZoom__content__close {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #666;
+      color: #FFF;
+      opacity: 0.8;
+      z-index: 1;
+      font-family: Arial, helvetica, sans-serif;
+      padding: 0.2em 0.7em;
+      text-decoration: none; }
+    #asosZoom__content__thumbs.zThumbsVertical {
+      width: 10%;
+      display: block;
+      position: absolute;
+      height: 100%;
+      right: 0;
+      top: 0;
+      pointer-events: none; }
+    #asosZoom__content__thumbs.zThumbsHorizontal {
+      width: 100%;
+      display: block;
+      position: absolute;
+      bottom: 0; }
+      #asosZoom__content__thumbs.zThumbsHorizontal a {
+        display: inline-block;
+        max-width: 5%; }
+    #asosZoom__content__thumbs a {
+      display: block;
+      margin: 5px 10px 0;
+      text-align: center;
+      opacity: 0.5;
+      pointer-events: auto; }
+      #asosZoom__content__thumbs a.active, #asosZoom__content__thumbs a:hover {
+        opacity: 1; }
+    #asosZoom__content__thumbs img {
+      cursor: pointer;
+      max-width: 100%;
+      border: thin solid #CCC; }
+    #asosZoom__content__next, #asosZoom__content__prev {
+      position: absolute;
+      top: 50%;
+      background: #666666;
+      color: #ffffff;
+      opacity: 0.8;
+      z-index: 1;
+      font-family: Arial, helvetica, sans-serif;
+      padding: 0.1em 0.3em;
+      text-decoration: none; }
+      #asosZoom__content__next:hover, #asosZoom__content__next:focus, #asosZoom__content__prev:hover, #asosZoom__content__prev:focus {
+        color: #ffffff;
+        text-decoration: none;
+        opacity: 1; }
+    #asosZoom__content__next {
+      right: 10%; }
+    #asosZoom__content__prev {
+      left: 1%; }
+
+/*# sourceMappingURL=asos.zoom.css.map */
